@@ -1,3 +1,6 @@
+import app.AppConfig;
+import app.Cat;
+import app.HelloWorld;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +27,7 @@ public class AppTest {
         Cat one = applicationContext.getBean(Cat.class);
         Cat two = applicationContext.getBean(Cat.class);
 
-        Assert.assertSame("Тест провален, не корректная настройка бина HelloWorld", tree, leaf);
-        Assert.assertNotSame("Тест провален, не корректная настройка бина Cat", one, two);
+        Assert.assertSame("Тест провален, не корректная настройка бина app.HelloWorld", tree, leaf);
+        Assert.assertNotSame("Тест провален, не корректная настройка бина app.Cat", one, two);
     }
 }

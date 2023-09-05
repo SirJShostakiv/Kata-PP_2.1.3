@@ -1,3 +1,5 @@
+package app;
+
 public class Cat {
     private String name;
     private String sex;
